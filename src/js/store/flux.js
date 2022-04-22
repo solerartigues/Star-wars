@@ -3,6 +3,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			personajes:[],
 			naves:[],
+			planetas:[],
 			demo: [
 				{
 					title: "FIRST",
@@ -34,6 +35,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 				})
                .catch(error => console.log('error', error));
 
+			},
+			getPlanets: () => {
+				fetch("https://www.swapi.tech/api/planets")
+               .then(response => response.json())
+               .then(result => {console.log(result.results)
+			       setStore({planetas:result.results})
+			})
+               .catch(error => console.log('error', error));
 			},
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {

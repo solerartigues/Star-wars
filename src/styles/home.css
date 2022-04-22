@@ -1,3 +1,29 @@
-.jumbotron {
-    background-color: rgb(206, 206, 8);
+.personajes {
+    background-image: url("https://cdn.pocket-lint.com/r/s/1200x2133/assets/images/147767-tv-feature-what-order-should-you-watch-all-the-star-wars-films-image1-1wdfjceytb.jpg");
+    background-position: center center;
+    
+}
+.naves {
+    background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2017/11/ala-x.jpg?itok=VF_xpPcN");
+    background-position: center center;
+    
+}
+.planetas {
+    background-image: url("https://lafuerzanoticias.files.wordpress.com/2018/10/mustafar-tall.jpg");
+    background-position: center center;
+    
+}
+
+.titulo {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
 }

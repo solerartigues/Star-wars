@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Cards } from "./cards.js";
 import "../../styles/navbar.css";
 
 export const Navbar = () => {
@@ -28,6 +29,11 @@ export const Navbar = () => {
         <li className="nav-item">
 		<Link to="/naves">
           <a className="nav-link active fw-bold" href="#">Naves</a>
+		</Link> 
+        </li>
+        <li className="nav-item">
+		<Link to="/planetas">
+          <a className="nav-link active fw-bold" href="#">Planetas</a>
 		</Link> 
         </li>
         
