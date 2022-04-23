@@ -28,7 +28,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 .catch(error => console.log('error', error));
 			},
 			getStarships: () => {
-				fetch("https://www.swapi.tech/api/starships")
+				fetch("https://swapi.dev/api/vehicles/")
                .then(response => response.json())
                .then(result => {console.log(result.results)
 			       setStore({naves:result.results})

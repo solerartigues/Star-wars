@@ -5,6 +5,7 @@ import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
 import Personajes from "./views/personajes.js";
 import Naves from "./views/naves.js";
+import Nav from "./views/nav.js";
 import Planetas from "./views/planetas.js";
 import Pers from "./views/pers.js";
 import { Demo } from "./views/demo";
@@ -35,12 +36,18 @@ const Layout = () => {
 						<Route exact path="/personajes">
 							<Personajes />
 						</Route>
+						<Route exact path="/pers/:uid">
+							<Pers />
+						</Route>
 						<Route exact path="/pers">
 							<Pers />
 						</Route>
 						<Route exact path="/naves">
 							<Naves />
 						</Route>	
+						<Route exact path="/nav/:uid">
+							<Nav />
+						</Route>
 						<Route exact path="/planetas">
 							<Planetas />
 						</Route>

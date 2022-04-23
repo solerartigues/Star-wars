@@ -17,9 +17,10 @@ const Personajes = () => {
         <h3 className="titulopersonajes text-warning mt-4"  >Personajes</h3>
         <div className="row justify-content-between">     
 
-         {store.personajes.map(function(objeto){
-           return <Cards objeto={objeto}></Cards>
+         {store.personajes.map(function(objeto, index){
+           return <Cards objeto={objeto} index={index} tipo="personaje" > </Cards>
          } )}
+
 
         
         
