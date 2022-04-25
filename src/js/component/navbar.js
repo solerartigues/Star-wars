@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Cards } from "./cards.js";
 import "../../styles/navbar.css";
 
+
 export const Navbar = () => {
+
+
+
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+     
      <div className="container">
      <Link to="/">
      <a className="navbar-brand" href="#">
@@ -48,7 +53,7 @@ export const Navbar = () => {
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a className="dropdown-item" href="#">Favorito 1</a></li>
             <li><a className="dropdown-item" href="#">Favorito 2</a></li>
-            <li><a className="dropdown-item" href="#">Favorito 3</a></li>
+            <li><a className="dropdown-item" href="#">Favorito 2 </a></li>
           </ul>
         </div>
   </div>
